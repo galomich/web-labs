@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system;
+}
+
+.list {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.add-button {
+  display: flex;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(147, 112, 216, 0.5);
+}
+
+.add-button input {
+  width: 90%;
+  height: auto;
+  border: none;
+  font-size: 25px;
+  color: rgba(214, 214, 214);
+  font-weight: bold;
+  background: #2e2d2d;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.add-button input:focus {
+  outline: none;
+}
+
+.add-button button {
+  width: 10%;
+  height: auto;
+  border: none;
+  background-color: mediumpurple;
+  color: rgba(214, 214, 214);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.delAll {
+  color: rgba(214, 214, 214);
+  background-color: #2e2d2d;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  border: none;
+  font-size: 13px;
+  box-shadow: 0px 0px 5px rgba(147, 112, 216, 0.5);
+}
+
+.delAll:hover {
+  scale: 1.01;
+  background: mediumpurple;
+}
+
+.todoEntry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list ul {
+  padding: 10px;
+  list-style-type: none;
+}
+
+.list li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 3px;
+  color: rgba(214, 214, 214);
+}
+
+.list li:hover {
+  cursor: pointer;
+  color: mediumpurple;
+}
+
+.crossedOut {
+  text-decoration: line-through;
+  color: rgba(214, 214, 214);
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: mediumpurple;
+  font-size: 20px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>rnf.com</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/todolist.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo_main.png" />
+          </a>
+          <a href="index.html">
+            <h1>Recipes<span>&</span>Food</h1>
+          </a>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Поиск" />
+          <button id="search-button">Найти</button>
+        </div>
+
+        <div class="nav">
+          <a href="recipes.html">Рецепты</a>
+          <a href="about.html">ToDoList</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="list">
+          <div class="add-button">
+            <input type="text" id="todoText" /><button type="button" id="add">
+              +
+            </button>
+          </div>
+
+          <ul id="todoList">
+            <div class="todoEntry">
+              <li>Eat</li>
+              <span class="delete">x</span>
+            </div>
+          </ul>
+          <button type="button" id="clear" class="delAll">Delete All</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/todolist.js"></script>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p id="load-time"></p>
+      </div>
+    </footer>
+  </body>
+</html>

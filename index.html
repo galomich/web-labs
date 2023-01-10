@@ -1,38 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <title>rnf.com</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
-</head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header_inner">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo_main.png">
-                </a>
-                <a href="index.html">
-                    <h1>Recipes<span>&</span>Food</h1>
-                </a>
-            </div>
-
-            <div class="search-bar">
-                    <input type="text" placeholder="Поиск">
-                    <button>Найти</button>
-            </div>
-
-            <nav class="nav">
-                    <a href="recipes.html">Рецепты</a>
-                    <a href="about.html">О нас</a>
-                    <a href="contacts.html">Контакты</a>
-            </nav>
-            
-            <nav class=""></nav>
+      <div class="header_inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo_main.png" />
+          </a>
+          <a href="index.html">
+            <h1>Recipes<span>&</span>Food</h1>
+          </a>
         </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Поиск" />
+          <button id="search-button">Найти</button>
+        </div>
+
+        <div class="nav">
+          <a href="recipes.html">Рецепты</a>
+          <a href="todolist.html">ToDoList</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
     </header>
-</body>
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="container">
+          
+        </div>
+        <div>
+          <div class="image-slider swiper">
+            <div class="image-wrapper swiper-wrapper">
+              <div class="image-slide swiper-slide">
+                <img src="images/tracksuitsbitch.jpg" />
+              </div>
+              <div class="image-slide swiper-slide">
+                <img src="images/tracksuitsbitch.jpg" />
+                <div class="slide-text">
+                  <h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quae.
+                  </h1>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quae.
+                </div>
+              </div>
+              <div class="image-slide swiper-slide">
+                <img src="images/YrexrVwZoUQ.jpg" />
+                <div class="slide-text">
+                  <h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quae.
+                  </h1>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quae.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <div class="fav-recipes">
+            <h1>Избранные рецепты</h1>
+            <div class="table-grid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/pizza.js"></script>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p id="load-time"></p>
+      </div>
+    </footer>
+  </body>
 </html>
